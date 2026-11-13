@@ -13,6 +13,7 @@ EXCHANGE_RATES: dict[str, float] = {
     "ZAR": 18.2,   # South African Rand
     "AUD": 1.52,
     "CHF": 0.89,
+    "HKD": 7.78,   # Hong Kong Dollar
 }
 
 
@@ -28,7 +29,7 @@ def calculate_trip_budget(
         daily_cost_usd: Average daily budget per person in USD (e.g. 150.0).
         days: Trip length in days (e.g. 5).
         travelers: Number of people traveling (defaults to 1).
-        target_currency: Currency code to convert total cost to (USD, EUR, JPY, GBP, CAD, PEN, ZAR, AUD, CHF). Defaults to 'USD'.
+        target_currency: Currency code to convert total cost to (USD, EUR, JPY, GBP, CAD, PEN, ZAR, AUD, CHF, HKD). Defaults to 'HKD'.
 
     Returns:
         A dictionary with total costs, category breakdown, and currency conversion.
